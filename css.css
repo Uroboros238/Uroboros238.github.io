@@ -1,0 +1,107 @@
+body {
+    font-family: "Garamond", serif;
+    background-color: #1a1a1a;
+    color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    height: 100%;
+}
+
+h1 {
+    color: #a83232;
+    font-family: 'UnifrakturMaguntia', cursive;
+    text-align: center;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px #000000;
+    margin-bottom: 20px;
+}
+
+.container {
+    background-color: #262626;
+    padding: 20px;
+    border: 5px solid #5c0000;
+    border-radius: 15px;
+    max-width: 900px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.image-container img {
+    width: 45%;
+    margin-bottom: 20px;
+    border: 3px solid #a83232;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+.centered {
+    text-align: center;
+}
+
+#theme-toggle {
+    margin-top: 20px;
+    text-align: center;
+}
+
+button {
+    background-color: #5c0000;
+    color: #f5f5f5;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #a83232;
+}
+
+.light-theme {
+    background-color: #f5f5f5;
+    color: #1a1a1a;
+}
+
+.light-theme h1 {
+    color: #5c0000;
+}
+
+.light-theme .container {
+    background-color: #fff;
+    border-color: #a83232;
+}
+
+.light-theme button {
+    background-color: #a83232;
+    color: #f5f5f5;
+}
+
+.light-theme button:hover {
+    background-color: #5c0000;
+}

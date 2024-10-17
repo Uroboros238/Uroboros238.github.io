@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>5 laba</title>
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>История Maison Margiela</h1>
+
+    <div class="container">
+        <p>
+            Maison Margiela — это французский модный дом, основанный бельгийским дизайнером Мартином Марджелой в 1988 году. 
+            Maison Margiela известен своим радикальным подходом к моде, экспериментами с формой, материалами и деконструкцией. 
+            Бренд бросает вызов традиционным стандартам красоты, создавая коллекции, которые меняют восприятие одежды.
+        </p>
+        <p>
+            За годы своего существования Maison Margiela стал символом андрогинности, минимализма и авангардизма в моде.
+            Коллекции бренда всегда отличаются инновациями, неожиданными решениями и уникальными элементами, такими как 
+            превращение мусора в предметы высокой моды.
+        </p>
+
+        <div class="image-container">
+            <img src="coat.jpg" alt="Maison Margiela Coat">
+            <img src="tabi.jpg" alt="Maison Margiela Tabi">
+        </div>
+
+        <div class="centered">
+            <button onclick="changeText()">Узнать больше</button>
+        </div>
+
+        <div id="theme-toggle" class="centered">
+            <button id="theme-btn" onclick="toggleTheme()">Сменить тему</button>
+        </div>
+    </div>
+
+    <script>
+        function changeText() {
+            const textElement = document.querySelector(".container p");
+            textElement.textContent = "Maison Margiela продолжает раздвигать границы моды, создавая одежду, которая удивляет и вдохновляет. Каждая коллекция отражает философию бренда: в моде нет правил, а красота скрыта в нестандартном.";
+            textElement.style.color = "#a83232";
+        }
+
+        function toggleTheme() {
+            document.body.classList.toggle("light-theme");
+        }
+    </script>
+</body>
+</html>
